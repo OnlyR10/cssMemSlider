@@ -13,36 +13,36 @@
   <div id="slider">
     <div class="wrapper">
 
+      <input id="firstSwitch" type="radio" name="control" class="switch" checked>
+      <input id="secondSwitch" type="radio" name="control" class="switch">
+      <input id="thirdSwitch" type="radio" name="control" class="switch">
+      <input id="fourthSwitch" type="radio" name="control" class="switch">
+
       <div class="images-box">
+        <img src="./images/Marshall.jpg" alt="Marshall" class="image image-marshall" width="1280" height="768">
 
-        <div id="marshall">
-          <img src="./images/Marshall.jpg" alt="Marshall" class="image image-marshall" width="1280" height="768">
-          <p class="signature-box__text">Marshall</p>
-        </div>
+        <img src="./images/Michael.jpg" alt="Michael" class="image image-michael" width="1280" height="768">
 
-        <div id="michael">
-          <img src="./images/Michael.jpg" alt="Michael" class="image image-michael" width="1280" height="768">
-          <p class="signature-box__text">Michael</p>
-        </div>
+        <img src="./images/Serj.jpg" alt="Serj" class="image image-serj" width="1280" height="768">
 
-        <div id="serj">
-          <img src="./images/Serj.jpg" alt="Serj" class="image image-serj" width="1280" height="768">
-          <p class="signature-box__text">Serj</p>
-        </div>
-
-        <div id="skylar">
-          <img src="./images/Skylar.jpg" alt="Skylar" class="image image-skylar" width="1280" height="768">
-          <p class="signature-box__text">Skylar</p>
-        </div>
-
+        <img src="./images/Skylar.jpg" alt="Skylar" class="image image-skylar" width="1280" height="768">
       </div>
 
       <div class="control">
+        <div class="signature-box">
+          <div class="signature-box__content">
+            <p class="signature-box__text">Marshall</p>
+            <p class="signature-box__text">Michael</p>
+            <p class="signature-box__text">Serj</p>
+            <p class="signature-box__text">Skylar</p>
+          </div>
+        </div>
+
         <div class="buttons-box">
-          <a href="#marshall" class="button"></a>
-          <a href="#michael" class="button"></a>
-          <a href="#serj" class="button"></a>
-          <a href="#skylar" class="button"></a>
+          <label for="firstSwitch" class="button first-button"></label>
+          <label for="secondSwitch" class="button second-button"></label>
+          <label for="thirdSwitch" class="button third-button"></label>
+          <label for="fourthSwitch" class="button fourth-button"></label>
         </div>
       </div>
 
