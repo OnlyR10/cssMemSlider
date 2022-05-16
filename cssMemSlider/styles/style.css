@@ -93,3 +93,18 @@ body {
   border: 0.2rem solid white;
   background-color: gray;
 }
+
+@media (max-width: 767px) {
+  .control {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .signature-box {
+    order: 2;
+  }
+
+  .buttons-box {
+    justify-content: center;
+  }
+}
