@@ -57,39 +57,39 @@ body {
   display: flex;
   justify-content: space-between;
   align-self: center;
-  gap: 1.5rem;
-  width: 100%;
-  height: 1.5rem;
+  gap: 1rem;
 }
 
 .first-button,
 .second-button,
 .third-button,
 .fourth-button {
-  width: 10%;
-  border-radius: 100%;
-  background-color: white;
-  box-sizing: border-box;
+  width: 2.5rem;
+  height: 2.5rem;
   cursor: pointer;
 }
 
 .button {
-  width: 300%;
-  height: 300%;
-  transform: translate(-33%, -33%);
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 100%;
+  background-color: white;
+  box-sizing: border-box;
+  transform: translate(34%, 34%);
+  cursor: pointer;
 }
 
-.first-button:hover,
-.second-button:hover,
-.third-button:hover,
-.fourth-button:hover {
+.first-button:hover .button,
+.second-button:hover .button,
+.third-button:hover .button,
+.fourth-button:hover .button {
   background-color: gray;
 }
 
-.first-button:hover,
-.second-button:hover,
-.third-button:hover,
-.fourth-button:hover {
+.first-button:active .button,
+.second-button:active .button,
+.third-button:active .button,
+.fourth-button:active .button {
   border: 0.2rem solid white;
   background-color: gray;
 }
