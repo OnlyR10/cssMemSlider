@@ -1,0 +1,159 @@
+@import './normalize.css';
+
+body {
+  height: 100vh;
+  background-color: #1D1D1D;
+}
+
+.wrapper {
+  width: 80%;
+  padding: 2vh 0;
+  margin: 0 auto;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.switch {
+  position: absolute;
+  transform: translate(-200vw, -200vh);
+  opacity: 0;
+}
+
+.images-box {
+  transition: transform 2s linear;
+}
+
+.signature-box__content {
+  transition: transform 2s linear;
+}
+
+#firstSwitch:checked ~ .images-box {
+  transform: translateX(0%);
+}
+
+#secondSwitch:checked ~ .images-box {
+  transform: translateX(-25%);
+}
+
+#thirdSwitch:checked ~ .images-box {
+  transform: translateX(-50%);
+}
+
+#fourthSwitch:checked ~ .images-box {
+  transform: translateX(-75%);
+}
+
+#firstSwitch:checked ~ .control .signature-box__content {
+  transform: translateX(0);
+}
+
+#secondSwitch:checked ~ .control .signature-box__content {
+   transform: translateX(-25%);
+}
+
+#thirdSwitch:checked ~ .control .signature-box__content {
+  transform: translateX(-50%);
+}
+
+#fourthSwitch:checked ~ .control .signature-box__content {
+  transform: translateX(-75%);
+}
+
+#firstSwitch:checked ~ .control .first-button .button,
+#secondSwitch:checked ~ .control .second-button .button,
+#thirdSwitch:checked ~ .control .third-button .button,
+#fourthSwitch:checked ~ .control .fourth-button .button {
+  background-color: transparent;
+  border: 0.2rem solid white;
+}
+
+.images-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 400%;
+  margin-bottom: 2vh;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.control {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+
+.signature-box {
+  width: 100%;
+  overflow: hidden;
+}
+
+.signature-box__content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 400%;
+}
+
+.signature-box__text {
+  display: inline-block;
+  margin: 1rem 0;
+  color: white;
+  font-size: 2rem;
+}
+
+.buttons-box {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  gap: 1rem;
+}
+
+.first-button,
+.second-button,
+.third-button,
+.fourth-button {
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+}
+
+.button {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: white;
+  border-radius: 100%;
+  box-sizing: border-box;
+  transform: translate(34%, 34%);
+  cursor: pointer;
+}
+
+.first-button:hover .button,
+.second-button:hover .button,
+.third-button:hover .button,
+.fourth-button:hover .button {
+  background-color: gray;
+}
+
+.first-button:active .button,
+.second-button:active .button,
+.third-button:active .button,
+.fourth-button:active .button {
+  background-color: gray;
+  border: 0.2rem solid white;
+}
+
+@media (max-width: 767px) {
+  .control {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .signature-box {
+    order: 2;
+  }
+
+  .buttons-box {
+    justify-content: center;
+  }
+}
