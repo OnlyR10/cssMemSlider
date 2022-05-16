@@ -20,6 +20,54 @@ body {
 }
 
 .images-box {
+  transition: transform 2s linear;
+}
+
+.signature-box__content {
+  transition: transform 2s linear;
+}
+
+#firstSwitch:checked ~ .images-box {
+  transform: translateX(0%);
+}
+
+#secondSwitch:checked ~ .images-box {
+  transform: translateX(-25%);
+}
+
+#thirdSwitch:checked ~ .images-box {
+  transform: translateX(-50%);
+}
+
+#fourthSwitch:checked ~ .images-box {
+  transform: translateX(-75%);
+}
+
+#firstSwitch:checked ~ .control .signature-box__content {
+  transform: translateX(0);
+}
+
+#secondSwitch:checked ~ .control .signature-box__content {
+   transform: translateX(-25%);
+}
+
+#thirdSwitch:checked ~ .control .signature-box__content {
+  transform: translateX(-50%);
+}
+
+#fourthSwitch:checked ~ .control .signature-box__content {
+  transform: translateX(-75%);
+}
+
+#firstSwitch:checked ~ .control .first-button .button,
+#secondSwitch:checked ~ .control .second-button .button,
+#thirdSwitch:checked ~ .control .third-button .button,
+#fourthSwitch:checked ~ .control .fourth-button .button {
+  background-color: transparent;
+  border: 0.2rem solid white;
+}
+
+.images-box {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   width: 400%;
