@@ -51,6 +51,7 @@ body {
   display: inline-block;
   margin: 1rem 0;
   color: white;
+  font-size: 2rem;
 }
 
 .buttons-box {
@@ -72,8 +73,8 @@ body {
 .button {
   width: 1.5rem;
   height: 1.5rem;
-  border-radius: 100%;
   background-color: white;
+  border-radius: 100%;
   box-sizing: border-box;
   transform: translate(34%, 34%);
   cursor: pointer;
@@ -90,8 +91,8 @@ body {
 .second-button:active .button,
 .third-button:active .button,
 .fourth-button:active .button {
-  border: 0.2rem solid white;
   background-color: gray;
+  border: 0.2rem solid white;
 }
 
 @media (max-width: 767px) {
